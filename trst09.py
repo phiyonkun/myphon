@@ -13,28 +13,27 @@ print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 tax = float(emp_salary) * 7 / 100 # หรือ emp_salary * 0.07
 insurence = float(emp_salary) * 3 / 100 # หรือ emp_salary * 0.03
 emp_salary_net = float(emp_salary) - tax - insurence
+
 print(f'รหัส: {emp_code} ชื่อ: {emp_name} เงินเดือน: {emp_salary}')
 print(f'หักภาษี {tax} บาท')
 print(f'หักค่าประกันสังคม {insurence} บาท')
 print(f'ต้องจ่ายเงินเดือนสุทธิ {emp_salary_net} บาท' )
 print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-ใprint("รหัส: emp_code} ชื่อ: {emp_name} เงินเดือน: {emp_salary}")
-print("หักภาษี {tax} บาท")
-print("หักค่าประกันสังคม {insurence} บาท")
-print("ต้องจ่ายเงินเดือนสุทธิ {emp_salary_net} บาท" )
+# ใช้ ,
+print("รหัส:", emp_code, "ชื่อ:" ,emp_name, "เงินเดือน:" ,emp_salary)
+print("หักภาษี", tax, "บาท")
+print("หักค่าประกันสังคม", insurence, "บาท")
+print("ต้องจ่ายเงินเดือนสุทธิ", emp_salary_net, "บาท")
 print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 # ใช้ +
-
-
-
-
-
-
+print("รหัส:" + emp_code + "ชื่อ:" + emp_name + "เงินเดือน:" + emp_salary)
+print("หักภาษี" + tax + "บาท")
+print("หักค่าประกันสังคม" + insurence + "บาท")
+print("ต้องจ่ายเงินเดือนสุทธิ" + emp_salary_net + "บาท")
 print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 # ใช้เมธอด format
-
-
-
-
-
+print("รหัส: {} ชื่อ: {} เงินเดือน: {}". format(emp_code, emp_name, emp_saraly))
+print("หักภาษี {} บาท". format(tax))
+print("หักค่าประกันสังคม {} บาท". format(insurence))
+print("ต้องจ่ายเงินเดือนสุทธิ {} บาท". format(emp_salary_net))
 print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
